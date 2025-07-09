@@ -1,6 +1,6 @@
 {
   "name": "@leonmin/gist",
-  "version": "2.0.3",
+  "version": "2.0.4",
   "description": "简单的命令行\"片段\"管理器",
   "main": "bin/index.js",
   "scripts": {
