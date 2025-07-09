@@ -5,7 +5,7 @@
   "main": "bin/index.js",
   "scripts": {
     "dev": "nodemon --watch './src/**/*.ts' --exec 'node --experimental-specifier-resolution=node --loader ts-node/esm' src/index.ts",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc"
   },
   "keywords": [
     "cli",
@@ -20,7 +20,23 @@
     "dict": "./bin/index.js"
   },
   "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/leonmin/gist.git"
+  },
   "devDependencies": {
-    "ts-node": "^10.9.2"
+    "ts-node": "10.9.2",
+    "typescript": "5.8.3"
+  },
+  "dependencies": {
+    "@types/inquirer": "9.0.8",
+    "@types/node": "24.0.11",
+    "@types/yargs": "17.0.33",
+    "boxen": "8.0.1",
+    "chalk": "5.4.1",
+    "clipboardy": "4.0.0",
+    "inquirer": "12.7.0",
+    "lowdb": "7.0.1",
+    "yargs": "18.0.0"
   }
 }
