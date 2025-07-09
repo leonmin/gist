@@ -88,8 +88,10 @@ export class GetGistCommand implements Command {
       colorful(gists[key]);
       db.data.gists[LAST_GIST_KEY] = gists[key];
       await db.write();
+      clipboard.write(gists[key]);
     } else if (gists[LAST_GIST_KEY]) {
       colorful(gists[LAST_GIST_KEY]);
+      clipboard.write(gists[LAST_GIST_KEY]);
     } else if (key) {
       colorful('异常: 数据不存在', 'fail');
     } else {
